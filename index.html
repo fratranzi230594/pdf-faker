@@ -23,10 +23,10 @@ body, html {height: 100%}
   </div>
   <div class="w3-display-topleft w3-container w3-xlarge">
     <p><button onclick="document.getElementById('menu').style.display='block'" class="w3-button w3-black">menu</button></p>
-    <p><button onclick="document.getElementById('contact').style.display='block'" class="w3-button w3-black">contact</button></p>
+    <p><button onclick="document.getElementById('contact').style.display='none'" class="w3-button w3-black" >contact</button></p>
   </div>
   <div class="w3-display-bottomleft w3-container">
-    <p class="w3-xlarge">monday closed | tuesday - thursday 6am - 1am | friday and sunday 6am - 2am | saturday 6am - 3am</p>
+    <p class="w3-xlarge">monday closed | tuesday - sunday 6am - 2am</p>
     <p class="w3-large">Piazza Regina Margherita, 83047 Lioni - Av</p>
     <p>powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
   </div>
@@ -46,7 +46,7 @@ body, html {height: 100%}
 </div>
 
 <!-- Contact Modal -->
-<div id="contact" class="w3-modal" style="display:none;">
+<div id="contact" class="w3-modal">
   <div class="w3-modal-content w3-animate-zoom">
     <div class="w3-container w3-black">
       <span onclick="document.getElementById('contact').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
