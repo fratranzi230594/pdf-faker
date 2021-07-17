@@ -24,7 +24,7 @@ body, html {height: 100%}
 <body>
 <script  type="text/javascript">
 	var tonias = ['tonia.jpg','tonia2.jpg','tonia3.jpg'];
-	document.bgimg.style.backgroundImage = "url(tonias[Math.random() * 3])";
+	document.getElementById("bgimg").style.backgroundImage = "url(tonias[Math.random() * 3])";
 	
 	function getRandomInt(max) {
   	return Math.floor(Math.random() * max);
