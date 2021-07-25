@@ -16,3 +16,8 @@ body, html {
     height: 30rem; 
     border: 1rem solid rgba(0,0,0,.1); 
 }
+
+.logo {
+    width: 50%;
+    height: 50%;
+}
