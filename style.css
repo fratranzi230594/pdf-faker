@@ -20,9 +20,9 @@ body, html {
 .logo {
     width: 50%;
     height: 50%;
-    margin-left: 20px;
 }
 
 .logoDiv{
     text-align: center;
+    margin-left: 20px;
 }
