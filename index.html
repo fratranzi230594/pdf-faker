@@ -1,93 +1,96 @@
 <!DOCTYPE html>
 <html>
-<title>Il Bacio della Buona Notte</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<script src="https://github.com/pipwerks/PDFObject/blob/master/pdfobject.min.js"></script>
-<style>
-body,h1,h5 {font-family: "Raleway", sans-serif}
-body, html {height: 100%}
-.bgimg {
-  min-height: 100%;
-  background-position: center;
-  background-size: cover;
-}
-</style>
-<style>
-.pdfobject-container { 
-  height: 30rem; 
-  border: 1rem solid rgba(0,0,0,.1); 
-  }
-</style>
-<body>
-<div class="bgimg w3-display-container w3-text-white">
-  <div class="w3-display-middle w3-jumbo">
-    <p>logo</p>
-  </div>
-  <div class="w3-display-topleft w3-container w3-xlarge">
-    <p><button onclick="document.getElementById('menu').style.display='block'" class="w3-button w3-black">menu</button></p>
-    <p style="display:none;"><button onclick="document.getElementById('contact').style.display='block'" class="w3-button w3-black" >contact</button></p>
-  </div>
-  <div class="w3-display-bottomleft w3-container">
-	  <p class="w3-xlarge"><b>monday : closed |<br> tuesday - sunday : 6am - 2am</b></p>
-	  <p class="w3-large"><b>Piazza Regina Margherita, 83047 Lioni - Av</b></p>
-    	  <p>powered by Ciccio with <3 </p>
-  </div>
-</div>
+  <head>
+    <title>Il Bacio della Buona Notte</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <script src="https://github.com/pipwerks/PDFObject/blob/master/pdfobject.min.js"></script>
+    <style>
+    body,h1,h5 {font-family: "Raleway", sans-serif}
+    body, html {height: 100%}
+    .bgimg {
+      min-height: 100%;
+      background-position: center;
+      background-size: cover;
+    }
+    </style>
+    <style>
+    .pdfobject-container { 
+      height: 30rem; 
+      border: 1rem solid rgba(0,0,0,.1); 
+      }
+    </style>
+  </head>
 
-<!-- Menu Modal -->
-<div id="menu" class="w3-modal">
-  <div class="w3-modal-content w3-animate-zoom">
-    <div class="w3-container w3-black w3-display-container">
-      <span onclick="document.getElementById('menu').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
-      <h3>Enjoy your quality drink</h3>
+  <body>
+    <div class="bgimg w3-display-container w3-text-white">
+      <div class="w3-display-middle w3-jumbo">
+        <p>logo</p>
+      </div>
+      <div class="w3-display-topleft w3-container w3-xlarge">
+        <p><button onclick="document.getElementById('menu').style.display='block'" class="w3-button w3-black">menu</button></p>
+        <p style="display:none;"><button onclick="document.getElementById('contact').style.display='block'" class="w3-button w3-black" >contact</button></p>
+      </div>
+      <div class="w3-display-bottomleft w3-container">
+        <p class="w3-xlarge"><b>monday : closed |<br> tuesday - sunday : 6am - 2am</b></p>
+        <p class="w3-large"><b>Piazza Regina Margherita, 83047 Lioni - Av</b></p>
+            <p>powered by Ciccio with &lt3</p>
+      </div>
     </div>
-    <div class="w3-container">
-      <div id="adobe-dc-view" style="height: 500px; width: 100%;"></div>
-      <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-      <script type="text/javascript">
-	      document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
-		      var adobeDCView = new AdobeDC.View({clientId: "573da6b6b6314b89aaa092781d59f083", divId: "adobe-dc-view"});
-	       	adobeDCView.previewFile({
-			      content:{location: {url: "example.pdf"}},
-			      metaData:{fileName: "example.pdf"}
-		      }, {embedMode: "SIZED_CONTAINER"});
-	});
-      </script>
-      <!--<iframe src="example.pdf" frameborder="0" width="100%" height="400px">-->
-    </div>
-  </div>
-</div>
 
-<!-- Contact Modal -->
-<div id="contact" class="w3-modal">
-  <div class="w3-modal-content w3-animate-zoom">
-    <div class="w3-container w3-black">
-      <span onclick="document.getElementById('contact').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
-      <h1>Contact</h1>
+    <!-- Menu Modal -->
+    <div id="menu" class="w3-modal">
+      <div class="w3-modal-content w3-animate-zoom">
+        <div class="w3-container w3-black w3-display-container">
+          <span onclick="document.getElementById('menu').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+          <h3>Enjoy your quality drink</h3>
+        </div>
+        <div class="w3-container">
+          <div id="adobe-dc-view" style="height: 500px; width: 100%;"></div>
+          <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+          <script type="text/javascript">
+            document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
+              var adobeDCView = new AdobeDC.View({clientId: "573da6b6b6314b89aaa092781d59f083", divId: "adobe-dc-view"});
+              adobeDCView.previewFile({
+                content:{location: {url: "example.pdf"}},
+                metaData:{fileName: "example.pdf"}
+              }, {embedMode: "SIZED_CONTAINER"});
+      });
+          </script>
+          <!--<iframe src="example.pdf" frameborder="0" width="100%" height="400px">-->
+        </div>
+      </div>
     </div>
-    <div class="w3-container">
-      <p>Reserve a table, ask for today's special or just send us a message:</p>
-      <form action="/action_page.php" target="_blank">
-        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
-        <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
-        <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
-        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
-        <p><button class="w3-button" type="submit">SEND MESSAGE</button></p>
-      </form>
-    </div>
-  </div>
-</div>
-	
-<script  type="text/javascript">
-	var tonias = ['tonia.jpg','tonia2.jpg','tonia3.jpg'];
-	document.getElementsByClassName("bgimg")[0].style.backgroundImage="URL(" + tonias[Math.floor(Math.random() *3) ]+")";
-	function getRandomInt(max) {
-  	return Math.floor(Math.random() * max);
-	}
-</script>
 
-</body>
+    <!-- Contact Modal -->
+    <div id="contact" class="w3-modal">
+      <div class="w3-modal-content w3-animate-zoom">
+        <div class="w3-container w3-black">
+          <span onclick="document.getElementById('contact').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+          <h1>Contact</h1>
+        </div>
+        <div class="w3-container">
+          <p>Reserve a table, ask for today's special or just send us a message:</p>
+          <form action="/action_page.php" target="_blank">
+            <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+            <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+            <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+            <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+            <p><button class="w3-button" type="submit">SEND MESSAGE</button></p>
+          </form>
+        </div>
+      </div>
+    </div>
+      
+    <script  type="text/javascript">
+      var tonias = ['tonia.jpg','tonia2.jpg','tonia3.jpg'];
+      document.getElementsByClassName("bgimg")[0].style.backgroundImage="URL(" + tonias[Math.floor(Math.random() *3) ]+")";
+      function getRandomInt(max) {
+        return Math.floor(Math.random() * max);
+      }
+    </script>
+
+  </body>
 </html>
