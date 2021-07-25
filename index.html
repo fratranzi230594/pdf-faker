@@ -6,22 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="style.css">
     <script src="https://github.com/pipwerks/PDFObject/blob/master/pdfobject.min.js"></script>
-    <style>
-    body,h1,h5 {font-family: "Raleway", sans-serif}
-    body, html {height: 100%}
-    .bgimg {
-      min-height: 100%;
-      background-position: center;
-      background-size: cover;
-    }
-    </style>
-    <style>
-    .pdfobject-container { 
-      height: 30rem; 
-      border: 1rem solid rgba(0,0,0,.1); 
-      }
-    </style>
   </head>
 
   <body>
@@ -51,13 +37,21 @@
           <div id="adobe-dc-view" style="height: 500px; width: 100%;"></div>
           <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
           <script type="text/javascript">
-            document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
+            document.addEventListener("adobe_dc_view_sdk.ready", function() { 
               var adobeDCView = new AdobeDC.View({clientId: "573da6b6b6314b89aaa092781d59f083", divId: "adobe-dc-view"});
               adobeDCView.previewFile({
-                content:{location: {url: "example.pdf"}},
-                metaData:{fileName: "example.pdf"}
-              }, {embedMode: "SIZED_CONTAINER"});
-      });
+                content:{
+                  location: {
+                    url: "example.pdf"
+                  }
+                },
+                metaData:{
+                  fileName: "example.pdf"
+                }
+              }, {
+                embedMode: "SIZED_CONTAINER"
+              });
+            });
           </script>
           <!--<iframe src="example.pdf" frameborder="0" width="100%" height="400px">-->
         </div>
