@@ -45,3 +45,7 @@ body, html {
     height: 650px;
     overflow-y: auto;
 }
+
+.w3-modal {
+    padding-top: 10px;
+}
