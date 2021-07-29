@@ -50,3 +50,8 @@ body, html {
 .w3-modal {
     padding-top: 10px;
 }
+
+.open {
+    background-color: black;
+    opacity: 0.2;
+}
