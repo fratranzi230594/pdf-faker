@@ -43,4 +43,5 @@ body, html {
 
 .menu-container{
     height: 500px;
+    overflow-y: auto;
 }
