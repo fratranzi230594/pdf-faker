@@ -26,3 +26,16 @@ body, html {
 .menu{
     height: 100%;
 }
+
+.my-card-content {
+    padding: 16px;
+}
+
+.my-card {
+    height: 50px;
+    width: 50px;
+  }
+
+.img-menu {
+    width: 50px;
+}
