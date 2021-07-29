@@ -52,6 +52,6 @@ body, html {
 }
 
 .open {
-    background-color: black;
+    background: black;
     opacity: 0.2;
 }
