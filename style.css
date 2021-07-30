@@ -55,7 +55,7 @@ body, html {
 
 .open {
     background: rgba(0, 0, 0, 0.7);
-    padding: 2px 1px;
+    padding: 2px;
 }
 
 .powered{
