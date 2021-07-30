@@ -1,6 +1,3 @@
-@use "@material/card";
-
-@include card.core-styles;
 
 function myNavFunc(){
     // If it's an iPhone..
@@ -11,3 +8,8 @@ function myNavFunc(){
     else
          window.open("https://www.google.com/maps/dir/?api=1&travelmode=driving&layer=traffic&destination=[40.877462478407395],[15.189870759238746]");
 }
+
+
+//@use "@material/card";
+
+//@include card.core-styles;
