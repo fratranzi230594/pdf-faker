@@ -4,9 +4,9 @@ function myNavFunc(){
     if( (navigator.platform.indexOf("iPhone") != -1) 
         || (navigator.platform.indexOf("iPod") != -1)
         || (navigator.platform.indexOf("iPad") != -1))
-         window.open("maps://www.google.com/maps/dir/?api=1&travelmode=driving&layer=traffic&destination=40.877462478407395,15.189870759238746");
+         window.open("maps://www.google.com/maps/dir/?api=1&travelmode=driving&layer=traffic&destination=40.876831326507, 15.187468160466818");
     else
-         window.open("https://www.google.com/maps/dir/?api=1&travelmode=driving&layer=traffic&destination=40.877462478407395,15.189870759238746");
+         window.open("https://www.google.com/maps/dir/?api=1&travelmode=driving&layer=traffic&destination=40.876831326507, 15.187468160466818");
 }
 
 
